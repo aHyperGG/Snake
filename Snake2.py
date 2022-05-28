@@ -110,7 +110,7 @@ while game_is_on :
         new_segment.penup()
         corps.append(new_segment)
         score += 10
-        reccord += 0.0001
+        retarder += 0.0001
 
         if score > record : 
             record = score
