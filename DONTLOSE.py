@@ -3,8 +3,8 @@ import time
 import random
 
 are_you_sure = input("Are you sure you want to play this game, if you lose the snake game your pc will stop. \n Say no if you dont want to play: ")
-if are_you_sure == "no" : 
-  exit()
+#if are_you_sure == "no" : 
+ # "exit()
 
 score = 0
 record = 0
