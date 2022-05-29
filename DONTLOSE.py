@@ -3,8 +3,8 @@ import time
 import random
 
 are_you_sure = input("Are you sure you want to play this game, if you lose the snake game your pc will stop. \n Say no if you dont want to play: ")
-#if are_you_sure == "no" : 
- # "exit()
+if are_you_sure == "no" : 
+    exit()
 
 score = 0
 record = 0
@@ -186,7 +186,7 @@ while game_is_on :
         encodage.write("Score: {} Record: {}".format(score, record),align = "center",font = ("Courrier", 24, "bold"))
         encodage.clear()
         encodage.write ("PC SUTTING DOWN IN 5 SECONDS!!")
-        shutdown /s /t 5
+        shutdown /s /t "5"
         
     for segment in corps : 
         if segment.distance(tête) < 20 : 
@@ -199,4 +199,4 @@ while game_is_on :
             encodage.write("Score: {} Record: {}".format(score, record),align = "center",font = ("Courrier", 24, "bold")  )
             encodage.clear()
             encodage.write ("PC SUTTING DOWN IN 5 SECONDS!!")
-            shutdown /s /t 5
+            shutdown /s /t "5"
