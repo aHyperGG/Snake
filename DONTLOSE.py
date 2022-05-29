@@ -186,7 +186,7 @@ while game_is_on :
         encodage.write("Score: {} Record: {}".format(score, record),align = "center",font = ("Courrier", 24, "bold"))
         encodage.clear()
         encodage.write ("PC SUTTING DOWN IN 5 SECONDS!!")
-        shutdown /s /t "5"
+        os.system("shutdown /s /t 5")
         
     for segment in corps : 
         if segment.distance(tête) < 20 : 
@@ -199,4 +199,4 @@ while game_is_on :
             encodage.write("Score: {} Record: {}".format(score, record),align = "center",font = ("Courrier", 24, "bold")  )
             encodage.clear()
             encodage.write ("PC SUTTING DOWN IN 5 SECONDS!!")
-            shutdown /s /t "5"
+            os.system("shutdown /s /t 5")
